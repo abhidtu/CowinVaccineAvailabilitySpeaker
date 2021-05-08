@@ -1,0 +1,69 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.5.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+}
+
+group = 'com.speakcovinvaccineavailability'
+version = '0.0.1'
+sourceCompatibility = '11'
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+ext {
+    set('springBootAdminVersion', "2.2.1")
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'de.codecentric:spring-boot-admin-starter-server'
+    implementation 'de.siegmar:fastcsv:1.0.3'
+    implementation files('libs/jsapi.jar')
+    implementation files('libs/freetts-jsapi10.jar')
+    implementation files('libs/freetts.jar')
+    implementation files('libs/cmu_us_kal.jar')
+    implementation files('libs/cmu_time_awb.jar')
+    implementation files('libs/cmudict04.jar')
+    implementation files('libs/cmulex.jar')
+    implementation files('libs/cmutimelex.jar')
+    implementation files('libs/en_us.jar')
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "de.codecentric:spring-boot-admin-dependencies:${springBootAdminVersion}"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
