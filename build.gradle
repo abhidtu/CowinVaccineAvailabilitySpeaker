@@ -4,9 +4,9 @@ plugins {
     id 'java'
 }
 
-group = 'com.speakcovinvaccineavailability'
+group = 'com.CowinVaccineAvailabilitySpeaker'
 version = '0.0.1'
-sourceCompatibility = '11'
+sourceCompatibility = '8'
 
 configurations {
     developmentOnly
