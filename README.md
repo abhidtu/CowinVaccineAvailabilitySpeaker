@@ -16,4 +16,4 @@ First check if java is installed on your system by running this command in your 
  
 And lets say we want to checkvccine availability in 'cental delih' for age 45 the request would be like: http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName=central delhi&&age=18
 
-2. To get notification if vaccine is available in the requested pin-code : 'http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName={district name}&&age={age}'
+2. To get notification if vaccine is available in the requested pin-code : 'http://localhost:8080/rest/corona/vaccination/registerPin?pinCode={desired pin code}&&age={age}'
