@@ -20,7 +20,7 @@ First check if java is installed on your system by running this command in your 
 
 * And lets say we want to check vaccine availability in pin-code = 110018, then the URl will be: (http://localhost:7021/rest/corona/vaccination/registerPin?pinCode=110018&&age=18)
 
-Here is a demo video for the same: https://youtu.be/ta_d0O8xgGE
+Here is a demo video for the same: [![Cowin Vaccine Availability Speaker](https://i.ytimg.com/an_webp/ta_d0O8xgGE/mqdefault_6s.webp?du=3000&sqp=CJnD44QG&rs=AOn4CLA6r4xi9NABX7ZCqsiFzzo_ZG3PpQ)](https://www.youtube.com/watch?v=ta_d0O8xgGE&ab_channel=AbhishekChawla)
 
 Here is a list of all possible districts categorised state wise which can be used to build the URL:
 
