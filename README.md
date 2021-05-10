@@ -12,3 +12,8 @@ First check if java is installed on your system by running this command in your 
 3. The application should start now with the message "Cowin Vacccine Availability Speaker" in Acii characters.
 4. Head over to your browser and open the following URL's
  1. To get notification if vaccine is available in the requested district : 'http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName={district name}&&age={age}'
+ For example if you want to check vaccine availability in 'south delhi' for age 18 the request would be like: http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName=south delhi&&age=18
+ 
+And lets say we want to checkvccine availability in 'cental delih' for age 45 the request would be like: http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName=central delhi&&age=18
+
+2. To get notification if vaccine is available in the requested pin-code : 'http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName={district name}&&age={age}'
