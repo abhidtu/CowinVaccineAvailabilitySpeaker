@@ -18,6 +18,4 @@ First check if java is installed on your system by running this command in your 
 
 * To get notification if vaccine is available in the requested pin-code : ('http://localhost:8080/rest/corona/vaccination/registerPin?pinCode={desired pin code}&&age={age}')
 
-* For example if you want to check vaccine availability in pin-code = 110018 for age 18 the URL will be like: (http://localhost:8080/rest/corona/vaccination/registerPin?pinCode={desired pin code}&&age=18)
-
 * And lets say we want to check vaccine availability in pin-ckde = 110018, then the URl will be: (http://localhost:8080/rest/corona/vaccination/registerPin?pinCode=110017&&age=18)
