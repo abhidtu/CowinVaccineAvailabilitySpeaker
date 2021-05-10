@@ -1,6 +1,10 @@
 # CowinVaccineAvailabilitySpeaker
 CowinVaccineAvailabilitySpeaker is a Java software that notifies user by voice when a new vaccine is available in the specified pin-code/district. It is built using "Co-WIN Public API" 
 
+# what makes CowinVaccineAvailabilitySpeaker unique?
+* Since it gives you voice notifications, its reduces the chances to miss the notifications especially when you are way from keyboard. The sofftware can be kept running in background and the voice notifications will start as soon a vaccine slot is available in the list of specified pin-codes or districts.
+* You can register for multiple districts and pin codes and start receiving voice notifications for them.
+
 # Prerequisite
 You will need to have Java 8 or above installed on your system.
 Steps to install Java on your system:
