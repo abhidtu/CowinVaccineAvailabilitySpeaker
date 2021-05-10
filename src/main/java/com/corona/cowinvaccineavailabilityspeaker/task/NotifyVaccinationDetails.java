@@ -53,7 +53,7 @@ public abstract class NotifyVaccinationDetails {
                 for (Session session : sessions) {
                     if(session.getMinAgeLimit() == minAge && session.getAvailableCapacity() > 0) {
                         count++;
-                        vaccineNotifierCallback.listen("Vaccine for "+ session.getMinAgeLimit() +" available at center "+ center.getName() + "pin code "+ center.getPincode() +" on date "+ session.getDate() +", quantity  "+session.getAvailableCapacity());
+                        vaccineNotifierCallback.listen("Vaccine "+session.getVaccine()+" for "+ session.getMinAgeLimit() +" available at center "+ center.getName() + " pin code "+ center.getPincode() +" on date "+ session.getDate() +", available quantity  "+session.getAvailableCapacity());
                     }
                 }
             }
