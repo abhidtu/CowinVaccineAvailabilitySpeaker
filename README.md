@@ -14,7 +14,7 @@ First check if java is installed on your system by running this command in your 
  * To get notification if vaccine is available in the requested district : 'http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName={district name}&&age={age}
  * For example if you want to check vaccine availability in 'south delhi' for age 18 the URL would be like: (http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName=south delhi&&age=18)
  
-* And lets say we want to check vccine availability in 'cental delih' for age 45 then the URL would be like: (http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName=central delhi&&age=45)
+* And lets say we want to check vccine availability in 'cental delih' for age 45 then the URL would be like: (http://localhost:8080/rest/corona/vaccination/registerDistrict?districtName=central delhi&&age=45) Thhe list of all possible districts are mentioned in the doc below.
 
 * To get notification if vaccine is available in the requested pin-code : ('http://localhost:8080/rest/corona/vaccination/registerPin?pinCode={desired pin code}&&age={age}')
 
