@@ -3,7 +3,6 @@ CowinVaccineAvailabilitySpeaker is a Java software that notifies user by voice w
 
 # Prerequisite
 You will need to have Java 8 or above installed on your system.
-Steps to install Java on your system:
 First check if java is installed on your system by running this command in your terminal: java -version if its says version greater that or equal to 8 then you already have java installed your system and this step can be skipped.
 
 # what makes CowinVaccineAvailabilitySpeaker unique?
