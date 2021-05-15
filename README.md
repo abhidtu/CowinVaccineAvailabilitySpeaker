@@ -6,7 +6,6 @@ CowinVaccineAvailabilitySpeaker is a Java software that notifies user by voice w
 
 # Update
 CowinVaccineAvailabilitySpeaker now has a Graphical User interface
-![GUI Cowin Vaccine Availability Speaker](https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/blob/main/screenshots/GUI-Cowin-vaccine-availability-speaker.png)
 
 # Prerequisite
 You will need to have Java 8 or above installed on your system.
@@ -20,19 +19,16 @@ First check if java is installed on your system by running this command in your 
 1. To run CowinVaccineAvailabilitySpeaker download the latest jar from here: https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/releases/download/v1.1/CowinVaccineAvailabilitySpeaker-1.1.jar
 3. Navigate to the downloads directory and note down its path. Open the termianl in your mac or PC and type "java -jar path_tothe_java_file".
 4. The application should start now with the message "Cowin Vacccine Availability Speaker" in Acii characters.
-5. Head over to your browser and open the following URL's
- * To get notification if vaccine is available in the requested district : (http://localhost:7021/rest/corona/vaccination/registerDistrict?districtName={district name}&&age={age})
- * For example if you want to check vaccine availability in 'south delhi' for age 18 the URL would be like: (http://localhost:7021/rest/corona/vaccination/registerDistrict?districtName=south%20delhi&&age=18)
- 
-* And lets say we want to check vccine availability in 'cental delih' for age 45 then the URL would be like: (http://localhost:7021/rest/corona/vaccination/registerDistrict?districtName=central%20delhi&&age=45) Thhe list of all possible districts are mentioned in the doc below.
-
-* To get notification if vaccine is available in the requested pin-code : ('http://localhost:7021/rest/corona/vaccination/registerPin?pinCode={desired pin code}&&age={age}')
-
-* And lets say we want to check vaccine availability in pin-code = 110018, then the URl will be: (http://localhost:7021/rest/corona/vaccination/registerPin?pinCode=110018&&age=18)
+5. Head over to your browser and open http://localhost:7021/
+Now you can see the User interface as shown below
+![GUI Cowin Vaccine Availability Speaker](https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/blob/main/screenshots/GUI-Cowin-vaccine-availability-speaker.png)
+6. Now you can register via pin code or district. Add your pin code/district where you want to get notified when the free vaccine slot becomes available along with the age (18 or 45) and click on submit. (Scroll down to see the list of districts which you can register for)
+7. Head over to the terminal where the application was running. Now if for example if you had entererd your pin-code as 110018 and age = 18 it will show 'registered a new pin code = 110018, age = 18'.
+8. Now keep it running in the background and if the vaccine is not available in this pin-code it will keep giving logs 'Sorry no vaccine available for  age 18' and as soon as a free vaccine slot becomes available in this pin-code it will give start voice notifications with the all the details. All the details will also be printed on the Console.
 
 # Video Tutorial:
 
-[![Cowin Vaccine Availability Speaker](https://i.ytimg.com/an_webp/ta_d0O8xgGE/mqdefault_6s.webp?du=3000&sqp=CJnD44QG&rs=AOn4CLA6r4xi9NABX7ZCqsiFzzo_ZG3PpQ)](https://www.youtube.com/watch?v=ta_d0O8xgGE&ab_channel=AbhishekChawla)
+[![Cowin Vaccine Availability Speaker](https://i.ytimg.com/an_webp/ta_d0O8xgGE/mqdefault_6s.webp?du=3000&sqp=CO-I_oQG&rs=AOn4CLA2DAonxmqb7yd40WDSnASTD8a5fA)
 
 Here is a list of all possible districts categorised state wise which can be used to build the URL:
 
