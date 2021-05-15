@@ -6,7 +6,7 @@ CowinVaccineAvailabilitySpeaker is a Java software that notifies user by voice w
 
 # Update
 CowinVaccineAvailabilitySpeaker now has a Graphical User interface
-![GUI Cowin Vaccine Availability Speaker]https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/blob/main/screenshots/GUI-Cowin-vaccine-availability-speaker.png
+![GUI Cowin Vaccine Availability Speaker](https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/blob/main/screenshots/GUI-Cowin-vaccine-availability-speaker.png)
 
 # Prerequisite
 You will need to have Java 8 or above installed on your system.
