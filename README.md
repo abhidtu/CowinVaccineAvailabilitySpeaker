@@ -27,7 +27,7 @@ Now you can see the User interface as shown below
 8. Now keep it running in the background and if the vaccine is not available in this pin-code it will keep giving logs 'Sorry no vaccine available for  age 18' and as soon as a free vaccine slot becomes available in this pin-code it will give start voice notifications with the all the details. All the details will also be printed on the Console.
 
 # Video Tutorial:
-
+Note this video tutorial registers pin-codes and districts via API, to register via UI follow the steps mentioned above.
 [![Cowin Vaccine Availability Speaker](https://i.ytimg.com/an_webp/ta_d0O8xgGE/mqdefault_6s.webp?du=3000&sqp=CO-I_oQG&rs=AOn4CLA2DAonxmqb7yd40WDSnASTD8a5fA)
 
 Here is a list of all possible districts categorised state wise which can be used to build the URL:
