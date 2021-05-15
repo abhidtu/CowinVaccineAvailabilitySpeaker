@@ -1,0 +1,49 @@
+<html lang="en">
+<html xmlns:th="https://thymeleaf.org">
+<head>
+    <title>Cowin Vaccine Availability Speaker</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../css/core.css" th:href="@{/css/core.css}" rel="stylesheet" media="screen" />
+</head>
+<body>
+<h1>Cowin Vaccine Availability Speaker</h1>
+<br>
+
+<h2>Register a new pin-code</h2>
+<form action="registerPin" method="post">
+    <table>
+        <tr>
+            <td><label for="pinCode">Pin Code</label></td>
+            <td><input type="text" name="pinCode"></input></td>
+        </tr>
+        <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="text" name="age"></input></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit"></input></td>
+        </tr>
+    </table>
+</form>
+
+<br>
+<h2>Register a new district</h2>
+<form action="registerDistrict" method="post">
+    <table>
+        <tr>
+            <td><label for="district">District</label></td>
+            <td><input type="text" name="district"></input></td>
+        </tr>
+        <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="text" name="age"></input></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit"></input></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
