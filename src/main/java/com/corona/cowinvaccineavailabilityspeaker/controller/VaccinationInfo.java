@@ -34,9 +34,9 @@ public class VaccinationInfo {
     private final CoronaVaccinationService coronaVaccinationService;
 
     @RequestMapping(value="/registerPin" , method= RequestMethod.GET)
-    public ResponseEntity<String> registerPinCode(@RequestParam int pinCode, @RequestParam int age) {
+    public ResponseEntity<String> registerPinCode(@RequestParam int pinCode, @RequestParam String vaccineType, @RequestParam int age) {
         try {
-            return ResponseEntity.ok().body(coronaVaccinationService.registerPinCode(pinCode, age));
+            return ResponseEntity.ok().body(coronaVaccinationService.registerPinCode(pinCode, age, vaccineType));
         }catch (IllegalArgumentException ie) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ie.getMessage());
         }catch (Exception e) {
@@ -45,9 +45,9 @@ public class VaccinationInfo {
     }
 
     @RequestMapping(value="/registerDistrict" , method= RequestMethod.GET)
-    public ResponseEntity<String> registerDistrict(@RequestParam String districtName, @RequestParam int age) {
+    public ResponseEntity<String> registerDistrict(@RequestParam String districtName, @RequestParam String vaccineType, @RequestParam int age) {
         try {
-            return ResponseEntity.ok().body(coronaVaccinationService.registerDistrict(districtName, age));
+            return ResponseEntity.ok().body(coronaVaccinationService.registerDistrict(districtName, age, vaccineType));
         }catch (IllegalArgumentException ie) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ie.getMessage());
         }catch (Exception e) {

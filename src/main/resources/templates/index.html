@@ -2,12 +2,33 @@
 <html xmlns:th="https://thymeleaf.org">
 <head>
     <title>Cowin Vaccine Availability Speaker</title>
+    <style>
+        .context {
+            margin: auto;
+            width: 18%;
+            border: 3px solid black;
+            padding: 22px;
+            border-radius: 14px;
+        }
+        #logo {
+            padding-left: inherit;
+        }
+    </style>
 </head>
 <body style="background-color:#ff9800;">
 <br>
-<img src="https://ph-files.imgix.net/209d88f3-0eb3-4e93-a928-e52d437077e2.png?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=100&h=100&fit=crop&dpr=2" style="border-radius: 11px;">
+<div class="Context">
+<div class="inner-context">
+<div id = "logo">
+    <img src="https://ph-files.imgix.net/209d88f3-0eb3-4e93-a928-e52d437077e2.png?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=100&h=100&fit=crop&dpr=2" style="border-radius: 11px;">
+</div>
 <h2>Register a new pin-code</h2>
 <form action="registerPin" method="post">
+    <h2>Select Vaccine Type</h2>
+    <input type="radio" id="anyVaccinePin" name="vaccineType" value="" checked> <label for="vaccineType">Doesn't matter</label><br>
+    <input type="radio" id="covaxinPin" name="vaccineType" value="COVAXIN"> <label for="vaccineType">COVAXIN</label><br>
+    <input type="radio" id="covishieldPin" name="vaccineType" value="COVISHIELD"> <label for="vaccineType">COVISHIELD</label><br>
+    <br>
     <table>
         <tr>
             <td><label for="pinCode">Pin Code</label></td>
@@ -27,6 +48,11 @@
 <br>
 <h2>Register a new district</h2>
 <form action="registerDistrict" method="post">
+    <h2>Select Vaccine Type</h2>
+    <input type="radio" id="anyVaccinePin" name="vaccineType" value="" checked> <label for="vaccineType">Doesn't matter</label><br>
+    <input type="radio" id="covaxinDistrict" name="vaccineType" value="COVAXIN"> <label for="vaccineType">COVAXIN</label><br>
+    <input type="radio" id="covishieldDistrict" name="vaccineType" value="COVISHIELD"> <label for="vaccineType">COVISHIELD</label><br>
+    <br>
     <table>
         <tr>
             <td><label for="district">District</label></td>
@@ -42,5 +68,7 @@
         </tr>
     </table>
 </form>
+</div>
+</div>
 </body>
 </html>

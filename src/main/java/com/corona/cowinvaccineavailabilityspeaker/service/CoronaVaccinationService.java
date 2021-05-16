@@ -41,18 +41,18 @@ public class CoronaVaccinationService {
         this.executorService = Executors.newFixedThreadPool(10);
     }
 
-    public String registerPinCode(Integer pinCode, int age) {
+    public String registerPinCode(Integer pinCode, int age, String vaccineType) {
         log.info("registered a new pin code = {}, age = {}", pinCode, age);
-        requestedPinCodesWithAges.add(new RequestedPinCodesWithAge(pinCode, age));
+        requestedPinCodesWithAges.add(new RequestedPinCodesWithAge(pinCode, age, sanitizeVaccineType(vaccineType)));
         return "Successfully registered a pin code = "+ pinCode + " for age = " + age;
     }
 
-    public String registerDistrict(String districtName, int age) {
+    public String registerDistrict(String districtName, int age, String vaccineType) {
         log.info("registered a new district  = {}, age = {}", districtName, age);
         if (districtName != null) {
             Integer districtId = bootstrapper.getDistrictIdByName(districtName.toLowerCase().replace(" ", ""));
             if (districtId != null) {
-                requestedDistrictsWithAges.add(new RequestedDistrictsWithAge(districtId, age));
+                requestedDistrictsWithAges.add(new RequestedDistrictsWithAge(districtId, age, sanitizeVaccineType(vaccineType)));
                 return "Successfully registered a district = " + districtName + " for age = " + age;
             }else {
                 throw new IllegalArgumentException("No district found by name = " + districtName);
@@ -76,6 +76,10 @@ public class CoronaVaccinationService {
             }
         });
         log.info("Successfully Checked vaccine available for pin codes and districts");
+    }
+
+    private String sanitizeVaccineType(String vaccineType) {
+        return vaccineType.equals("") ? null : vaccineType;
     }
 
 }

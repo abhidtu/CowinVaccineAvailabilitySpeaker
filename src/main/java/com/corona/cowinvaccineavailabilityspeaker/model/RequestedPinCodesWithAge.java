@@ -15,4 +15,5 @@ import lombok.Setter;
 public class RequestedPinCodesWithAge {
     Integer pinCode;
     Integer age;
+    String vaccineType;
 }

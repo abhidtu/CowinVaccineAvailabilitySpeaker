@@ -37,6 +37,6 @@ public class NotifyVaccinationDetailsByDistrict extends NotifyVaccinationDetails
 
     public void execute(RequestedDistrictsWithAge requestedDistrictsWithAge, VaccineNotifierCallback vaccineNotifierCallback) {
         this.requestedDistrictsWithAge = requestedDistrictsWithAge;
-        Notify(requestedDistrictsWithAge.getDistrictId(), requestedDistrictsWithAge.getAge(), vaccineNotifierCallback);
+        Notify(requestedDistrictsWithAge.getDistrictId(), requestedDistrictsWithAge.getAge(), requestedDistrictsWithAge.getVaccineType(), vaccineNotifierCallback);
     }
 }

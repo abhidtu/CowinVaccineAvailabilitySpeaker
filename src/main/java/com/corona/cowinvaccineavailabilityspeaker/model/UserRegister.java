@@ -10,5 +10,6 @@ public class UserRegister {
     private int pinCode;
     private String district;
     private int age;
+    private String vaccineType;
 
 }

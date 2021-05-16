@@ -14,7 +14,8 @@ import org.springframework.web.client.RestTemplate;
  */
 @Component
 @Scope("prototype")
-public class NotifyVaccinationDetailsByPin extends NotifyVaccinationDetails {
+public class
+NotifyVaccinationDetailsByPin extends NotifyVaccinationDetails {
 
     private RequestedPinCodesWithAge requestedPinCodesWithAge;
 
@@ -37,7 +38,7 @@ public class NotifyVaccinationDetailsByPin extends NotifyVaccinationDetails {
 
     public void execute(RequestedPinCodesWithAge requestedPinCodesWithAge, VaccineNotifierCallback vaccineNotifierCallback) {
         this.requestedPinCodesWithAge = requestedPinCodesWithAge;
-        Notify(requestedPinCodesWithAge.getPinCode(), requestedPinCodesWithAge.getAge(), vaccineNotifierCallback);
+        Notify(requestedPinCodesWithAge.getPinCode(), requestedPinCodesWithAge.getAge(), requestedPinCodesWithAge.getVaccineType(), vaccineNotifierCallback);
     }
 
 }

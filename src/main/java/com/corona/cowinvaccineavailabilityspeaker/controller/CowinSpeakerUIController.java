@@ -31,7 +31,7 @@ class CowinSpeakerUIController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("user-register-pin");
         modelAndView.addObject("userRegister", userRegister);
-        coronaVaccinationService.registerPinCode(userRegister.getPinCode(), userRegister.getAge());
+        coronaVaccinationService.registerPinCode(userRegister.getPinCode(), userRegister.getAge(), userRegister.getVaccineType());
         return modelAndView;
     }
 
@@ -40,7 +40,7 @@ class CowinSpeakerUIController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("user-register-district");
         modelAndView.addObject("userRegister", userRegister);
-        coronaVaccinationService.registerDistrict(userRegister.getDistrict(), userRegister.getAge());
+        coronaVaccinationService.registerDistrict(userRegister.getDistrict(), userRegister.getAge(), userRegister.getVaccineType());
         return modelAndView;
     }
 

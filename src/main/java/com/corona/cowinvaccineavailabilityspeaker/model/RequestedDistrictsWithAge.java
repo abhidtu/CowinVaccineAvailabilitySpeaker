@@ -15,4 +15,5 @@ import lombok.Setter;
 public class RequestedDistrictsWithAge {
     Integer districtId;
     Integer age;
+    String vaccineType;
 }

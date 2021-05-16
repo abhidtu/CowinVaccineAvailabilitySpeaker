@@ -44,7 +44,7 @@ public abstract class NotifyVaccinationDetails {
         return centers;
     }
 
-    protected void Notify(Integer data , int minAge, VaccineNotifierCallback vaccineNotifierCallback) {
+    protected void Notify(Integer data , int minAge, String vaccineType, VaccineNotifierCallback vaccineNotifierCallback) {
         List<Center> centres = getVaccinationCentres(data);
         if(centres != null) {
             int count = 0;
@@ -52,8 +52,10 @@ public abstract class NotifyVaccinationDetails {
                 List<Session> sessions = center.getSessions();
                 for (Session session : sessions) {
                     if(session.getMinAgeLimit() == minAge && session.getAvailableCapacity() > 0) {
-                        count++;
-                        vaccineNotifierCallback.listen("Vaccine "+session.getVaccine()+" for "+ session.getMinAgeLimit() +" available at center "+ center.getName() + " pin code "+ center.getPincode() +" on date "+ session.getDate() +", available quantity  "+session.getAvailableCapacity());
+                        if(vaccineType == null || session.getVaccine().equals(vaccineType)) {
+                            count++;
+                            vaccineNotifierCallback.listen("Vaccine " + session.getVaccine() + " for " + session.getMinAgeLimit() + " available at center " + center.getName() + " pin code " + center.getPincode() + " on date " + session.getDate() + ", available quantity  " + session.getAvailableCapacity());
+                        }
                     }
                 }
             }
