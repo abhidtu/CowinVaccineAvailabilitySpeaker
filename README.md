@@ -30,7 +30,7 @@ Now you can see the User interface as shown below
 
 # Video Tutorial:
 Note this video tutorial registers pin-codes and districts via API, to register via UI follow the steps mentioned above.
-[![Cowin Vaccine Availability Speaker](https://i.ytimg.com/an_webp/ta_d0O8xgGE/mqdefault_6s.webp?du=3000&sqp=CO-I_oQG&rs=AOn4CLA2DAonxmqb7yd40WDSnASTD8a5fA)
+[![Cowin Vaccine Availability Speaker](https://www.youtube.com/watch?v=lejloUIp9cw)
 
 Here is a list of all possible districts categorised state wise which can be used to build the URL:
 
