@@ -18,7 +18,7 @@ First check if java is installed on your system by running this command in your 
 
 # Usage
 1. Make sure your system has Java 8 or abovve installed. If not please install java 8 or above in your system before proceeding.
-2.  To run CowinVaccineAvailabilitySpeaker download the latest jar from here: https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/releases/download/v1.1/CowinVaccineAvailabilitySpeaker-1.1.jar
+2.  To run CowinVaccineAvailabilitySpeaker download the latest jar from here: https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/releases/download/v1.2/CowinVaccineAvailabilitySpeaker-1.2.jar
 3. Navigate to the downloads directory and note down its path. Open the termianl in your mac or PC and type "java -jar path_tothe_java_file".
 4. The application should start now with the message "Cowin Vacccine Availability Speaker" in Acii characters.
 5. Head over to your browser and open http://localhost:7021/
