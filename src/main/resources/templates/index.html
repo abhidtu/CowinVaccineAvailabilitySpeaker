@@ -2,23 +2,20 @@
 <html xmlns:th="https://thymeleaf.org">
 <head>
     <title>Cowin Vaccine Availability Speaker</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="../css/core.css" th:href="@{/css/core.css}" rel="stylesheet" media="screen" />
 </head>
-<body>
-<h1>Cowin Vaccine Availability Speaker</h1>
+<body style="background-color:#ff9800;">
 <br>
-
+<img src="https://ph-files.imgix.net/209d88f3-0eb3-4e93-a928-e52d437077e2.png?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=100&h=100&fit=crop&dpr=2" style="border-radius: 11px;">
 <h2>Register a new pin-code</h2>
 <form action="registerPin" method="post">
     <table>
         <tr>
             <td><label for="pinCode">Pin Code</label></td>
-            <td><input type="text" name="pinCode"></input></td>
+            <td><input type="text" name="pinCode" required></input></td>
         </tr>
         <tr>
             <td><label for="age">Age</label></td>
-            <td><input type="text" name="age"></input></td>
+            <td><input type="text" name="age" required></input></td>
         </tr>
         <tr>
             <td></td>
@@ -33,11 +30,11 @@
     <table>
         <tr>
             <td><label for="district">District</label></td>
-            <td><input type="text" name="district"></input></td>
+            <td><input type="text" name="district" required></input></td>
         </tr>
         <tr>
             <td><label for="age">Age</label></td>
-            <td><input type="text" name="age"></input></td>
+            <td><input type="text" name="age" required></input></td>
         </tr>
         <tr>
             <td></td>
