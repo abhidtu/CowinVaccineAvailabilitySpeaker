@@ -24,10 +24,11 @@
 </div>
 <h2>Register a new pin-code</h2>
 <form action="registerPin" method="post">
-    <h2>Select Vaccine Type</h2>
+    <h3>Select Vaccine Type</h3>
     <input type="radio" id="anyVaccinePin" name="vaccineType" value="" checked> <label for="vaccineType">Doesn't matter</label><br>
     <input type="radio" id="covaxinPin" name="vaccineType" value="COVAXIN"> <label for="vaccineType">COVAXIN</label><br>
     <input type="radio" id="covishieldPin" name="vaccineType" value="COVISHIELD"> <label for="vaccineType">COVISHIELD</label><br>
+    <input type="radio" id="sputnikPin" name="vaccineType" value="SPUTNIK V"> <label for="vaccineType">SPUTNIK V</label><br>
     <br>
     <table>
         <tr>
@@ -35,8 +36,9 @@
             <td><input type="text" name="pinCode" required></input></td>
         </tr>
         <tr>
-            <td><label for="age">Age</label></td>
-            <td><input type="text" name="age" required></input></td>
+            <h3>Select Age</h3>
+            <input type="radio" id="covaxinAge18" name="age" value="18"> <label for="age">18+</label><br>
+            <input type="radio" id="covaxinAge45" name="age" value="18"> <label for="age">45+</label><br>
         </tr>
         <tr>
             <td></td>
@@ -48,10 +50,11 @@
 <br>
 <h2>Register a new district</h2>
 <form action="registerDistrict" method="post">
-    <h2>Select Vaccine Type</h2>
+    <h3>Select Vaccine Type</h3>
     <input type="radio" id="anyVaccinePin" name="vaccineType" value="" checked> <label for="vaccineType">Doesn't matter</label><br>
     <input type="radio" id="covaxinDistrict" name="vaccineType" value="COVAXIN"> <label for="vaccineType">COVAXIN</label><br>
     <input type="radio" id="covishieldDistrict" name="vaccineType" value="COVISHIELD"> <label for="vaccineType">COVISHIELD</label><br>
+    <input type="radio" id="sputnikDistrict" name="vaccineType" value="SPUTNIK V"> <label for="vaccineType">SPUTNIK V</label><br>
     <br>
     <table>
         <tr>
@@ -59,8 +62,9 @@
             <td><input type="text" name="district" required></input></td>
         </tr>
         <tr>
-            <td><label for="age">Age</label></td>
-            <td><input type="text" name="age" required></input></td>
+            <h3>Select Age</h3>
+            <input type="radio" id="covishieldAge18" name="age" value="18"> <label for="age">18+</label><br>
+            <input type="radio" id="covishieldAge45" name="age" value="45"> <label for="age">45+</label><br>
         </tr>
         <tr>
             <td></td>

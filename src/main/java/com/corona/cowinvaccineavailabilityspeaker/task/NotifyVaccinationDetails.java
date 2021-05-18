@@ -52,7 +52,7 @@ public abstract class NotifyVaccinationDetails {
                 List<Session> sessions = center.getSessions();
                 for (Session session : sessions) {
                     if(session.getMinAgeLimit() == minAge && session.getAvailableCapacity() > 0) {
-                        if(vaccineType == null || session.getVaccine().equals(vaccineType)) {
+                        if(vaccineType == null || session.getVaccine().equalsIgnoreCase(vaccineType)) {
                             count++;
                             vaccineNotifierCallback.listen("Vaccine " + session.getVaccine() + " for " + session.getMinAgeLimit() + " available at center " + center.getName() + " pin code " + center.getPincode() + " on date " + session.getDate() + ", available quantity  " + session.getAvailableCapacity());
                         }
