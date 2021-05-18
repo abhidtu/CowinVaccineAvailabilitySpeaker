@@ -6,19 +6,19 @@ CowinVaccineAvailabilitySpeaker is a Java software that notifies user by voice w
 <a href="https://www.producthunt.com/posts/cowin-vaccine-availability-speaker?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cowin-vaccine-availability-speaker" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=295612&theme=light" alt="Cowin Vaccine Availability Speaker - Realtime voice notifications for available vaccination slots | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 # Update
-CowinVaccineAvailabilitySpeaker now has a Graphical User interface
+CowinVaccineAvailabilitySpeaker now has a Graphical User interface with ability to select the vaccine type, also added the Sputnik V support.
 
 # Prerequisite
 You will need to have Java 8 or above installed on your system.
 First check if java is installed on your system by running this command in your terminal: java -version if its says version greater that or equal to 8 then you already have java installed your system and this step can be skipped.
 
 # what makes CowinVaccineAvailabilitySpeaker unique?
-* Since it gives you voice notifications, its reduces the chances to miss the notifications especially when you are away from keyboard. The sofftware can be kept running in background and the voice notifications will start as soon a vaccine slot is available in the list of specified pin-codes or districts.
+* Since it gives you voice notifications, its reduces the chances to miss the notifications especially when you are away from keyboard. The software can be kept running in background and the voice notifications will start as soon a vaccine slot is available in the list of specified pin-codes or districts.
 * You can register for multiple districts and pin codes and start receiving voice notifications for them.
 
 # Usage
 1. Make sure your system has Java 8 or abovve installed. If not please install java 8 or above in your system before proceeding.
-2.  To run CowinVaccineAvailabilitySpeaker download the latest jar from here: https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/releases/download/v1.2/CowinVaccineAvailabilitySpeaker-1.2.jar
+2.  To run CowinVaccineAvailabilitySpeaker download the latest jar from here: https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/releases/download/v1.2.1/CowinVaccineAvailabilitySpeaker-1.2.1.jar
 3. Navigate to the downloads directory and note down its path. Open the termianl in your mac or PC and type "java -jar path_tothe_java_file".
 4. The application should start now with the message "Cowin Vacccine Availability Speaker" in Acii characters.
 5. Head over to your browser and open http://localhost:7021/
