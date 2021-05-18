@@ -23,7 +23,7 @@ First check if java is installed on your system by running this command in your 
 4. The application should start now with the message "Cowin Vacccine Availability Speaker" in Acii characters.
 5. Head over to your browser and open http://localhost:7021/
 Now you can see the User interface as shown below
-![GUI Cowin Vaccine Availability Speaker](https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/blob/main/screenshots/Cowin-vaccine-availability-speaker.png)
+![GUI Cowin Vaccine Availability Speaker](https://github.com/abhidtu/CowinVaccineAvailabilitySpeaker/blob/main/screenshots/cowin-vacine-availability-speaker-v1.2.1.png)
 6. Now you can register via pin code or district. Add your pin code/district where you want to get notified when the free vaccine slot becomes available along with the age (18 or 45) and click on submit. (Scroll down to see the list of districts which you can register for)
 7. Head over to the terminal where the application was running. Now if for example if you had entererd your pin-code as 110018 and age = 18 it will show 'registered a new pin code = 110018, age = 18'.
 8. Now keep it running in the background and if the vaccine is not available in this pin-code it will keep giving logs 'Sorry no vaccine available for  age 18' and as soon as a free vaccine slot becomes available in this pin-code it will give start voice notifications with the all the details. All the details will also be printed on the Console.
